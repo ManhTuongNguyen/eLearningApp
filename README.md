@@ -20,9 +20,9 @@ To get a local copy up and running follow these simple example steps.
    git clone https://github.com/ManhTuongNguyen/eLearningApp.git
    ```
 2. Move to the project
-```
-cd eLearningApp
-```
+   ```
+   cd eLearningApp
+   ```
 3. Install NPM packages
    ```sh
    npm i --force
