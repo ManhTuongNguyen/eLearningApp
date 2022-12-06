@@ -44,6 +44,6 @@ Information about this apk:
 * targetSdkVersion = 33
 
 ## Images from this application
-![Pic1](https://github.com/ManhTuongNguyen/eLearningApp/tree/master/images/Pic1.png?raw=true)
-![Pic2](https://github.com/ManhTuongNguyen/eLearningApp/tree/master/images/Pic2.png?raw=true)
-![Pic3](https://github.com/ManhTuongNguyen/eLearningApp/tree/master/images/Pic3.png?raw=true)
+![Pic1](./images/Pic1.png?raw=true)
+![Pic2](./images/Pic2.png?raw=true)
+![Pic3](./images/Pic3.png?raw=true)
