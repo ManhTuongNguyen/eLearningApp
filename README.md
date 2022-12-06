@@ -1,4 +1,46 @@
-# eLearningApp
-Project cá nhân môn học lập trình mobile
-## Ứng dụng học tiếng anh
-##### Project sử dụng ngôn ngữ React native - front-end và Django rest framework - backend API
+## About The Project
+Name: eLearing
+
+Build with [React native](https://reactnative.dev/)
+
+Backend build with Django
+
+[Link to repository backend](https://github.com/ManhTuongNguyen/eLearningApp_Backend)
+
+* react native version: 0.70.4
+* npm version: 8.11.0
+* yarn version: 1.22.19
+
+Application learning english for Vietnamese
+## Getting Started
+To get a local copy up and running follow these simple example steps.
+### How to run on android
+1. Clone the repo
+   ```sh
+   git clone https://github.com/ManhTuongNguyen/eLearningApp.git
+   ```
+2. Move to the project
+```
+cd eLearningApp
+```
+3. Install NPM packages
+   ```sh
+   npm i --force
+   ```
+4. Install react native cli
+   ```sh
+   yarn global add react-native-cli
+   ```
+5. Connect to android phone by cable and turn on debugging mode
+6. Run this command
+   ```sh
+   npx react-native run-android
+   ```
+**Or [Download file apk and install it](https://drive.google.com/file/d/1DVlWkOAN_Lat4cSKtikZD53ebMw2nnsm/view?usp=sharing)**
+
+Information about this apk:
+* minSdkVersion = 21
+* compileSdkVersion = 31
+* targetSdkVersion = 33
+
+## Images from this application
