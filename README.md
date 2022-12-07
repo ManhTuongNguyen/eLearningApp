@@ -7,11 +7,12 @@ Backend build with Django
 
 [Link to repository backend](https://github.com/ManhTuongNguyen/eLearningApp_Backend)
 
+Application learning english for Vietnamese
+## About my system
 * react native version: 0.70.4
 * npm version: 8.11.0
 * yarn version: 1.22.19
 
-Application learning english for Vietnamese
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 ### How to run on android
