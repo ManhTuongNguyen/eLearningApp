@@ -7,11 +7,12 @@ Backend build with Django
 
 [Link to repository backend](https://github.com/ManhTuongNguyen/eLearningApp_Backend)
 
+Application learning english for Vietnamese
+## About my system
 * react native version: 0.70.4
 * npm version: 8.11.0
 * yarn version: 1.22.19
 
-Application learning english for Vietnamese
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 ### How to run on android
@@ -20,9 +21,9 @@ To get a local copy up and running follow these simple example steps.
    git clone https://github.com/ManhTuongNguyen/eLearningApp.git
    ```
 2. Move to the project
-```
-cd eLearningApp
-```
+   ```
+   cd eLearningApp
+   ```
 3. Install NPM packages
    ```sh
    npm i --force
@@ -36,7 +37,7 @@ cd eLearningApp
    ```sh
    npx react-native run-android
    ```
-**Or [Download file apk and install it](https://drive.google.com/file/d/1DVlWkOAN_Lat4cSKtikZD53ebMw2nnsm/view?usp=sharing)**
+**Or [Download file apk and install it](https://github.com/ManhTuongNguyen/eLearningApp/releases/tag/v1.0.0)**
 
 Information about this apk:
 * minSdkVersion = 21
@@ -44,6 +45,6 @@ Information about this apk:
 * targetSdkVersion = 33
 
 ## Images from this application
-![Pic1](https://github.com/ManhTuongNguyen/eLearningApp/tree/master/images/Pic1.png?raw=true)
-![Pic2](https://github.com/ManhTuongNguyen/eLearningApp/tree/master/images/Pic2.png?raw=true)
-![Pic3](https://github.com/ManhTuongNguyen/eLearningApp/tree/master/images/Pic3.png?raw=true)
+![Pic1](./images/Pic1.png?raw=true)
+![Pic2](./images/Pic2.png?raw=true)
+![Pic3](./images/Pic3.png?raw=true)
