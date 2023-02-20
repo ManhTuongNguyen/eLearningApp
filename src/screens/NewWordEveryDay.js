@@ -11,8 +11,9 @@ import {
 import Tts from 'react-native-tts'
 import { Button, Card } from '@rneui/base';
 import Icon from 'react-native-vector-icons/Feather';
-import { api, BASE_URL } from '../config';
+import { api } from '../config';
 import COLORS from '../colors/Color';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
 Tts.setDefaultLanguage('en-GB')
@@ -195,7 +196,7 @@ export default function Dictionary() {
 
     const ListData = () => {
         return (
-            <ScrollView style={{ width: "90%", marginLeft: "5%" }}>
+            <ScrollView style={{ width: "90%" }}>
                 <Text style={styles.info}>Phát âm: {pronounce}</Text>
                 <Card.Divider />
                 {listDataSource.map((item, key) => (
@@ -217,70 +218,56 @@ export default function Dictionary() {
 
     return !loading ? (
         <View style={styles.container}>
-            <View style={{ flex: 1 }}>
-
-                <View style={{
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    marginTop: 30,
-                    marginRight: 30
-                }}>
-
-                    <Button color="warning" containerStyle={{ borderRadius: 10 }}
+            <View style={{ flex: 1, alignItems: 'center' }}>
+                <TouchableOpacity style={{ width: 96, marginTop: 15 }}>
+                    <Button color="#139190" containerStyle={{ borderRadius: 10 }}
+                        disabled={loading}
+                        onPress={() => {
+                            getInfo();
+                        }}>
+                        Từ khác
+                        <Ionicons name="reload" size={18} color="#fff" style={{marginLeft: 7}} />
+                    </Button>
+                </TouchableOpacity>
+                <View style={{ fontSize: 24, flexDirection: "row", alignItems: 'center', marginTop: 20, marginLeft: "17%"}}>
+                    <Text style={{fontSize: 28, fontWeight: '700', color: "#454444"}}>
+                        {checkedWord}
+                    </Text>
+                    <View style={{marginLeft: 20, width: "14%"}}>
+                    <TouchableOpacity
+                        style={{ paddingLeft: 14}}
                         onPress={() => {
                             speak();
                         }}>
-                        <Icon name="volume-2" size={23} color="#000" />
-                    </Button>
+                        <Icon name="volume-2" size={28} color="#454444" />
+                    </TouchableOpacity>
+                    </View>
                 </View>
-                <Card.Title style={{ fontSize: 24, marginTop: 25 }}>{checkedWord}</Card.Title>
                 <Card.Divider />
 
                 <ListData />
             </View>
 
-            <TouchableOpacity style={{ position: 'absolute', top: 30, right: 30, width: 120, height: 65 }}>
-                <Button color="#139190" containerStyle={{ borderRadius: 10 }}
-                    onPress={() => {
-                        getInfo();
-                    }}>
-                    Từ khác
-                </Button>
-            </TouchableOpacity>
         </View>
     )
         :
         (
             <View style={styles.container}>
-                <View style={{ flex: 1 }}>
-
-                    <View style={{
-                        flexDirection: "row",
-                        justifyContent: "center",
-                        marginTop: 30,
-                        marginRight: 30
-                    }}>
-
-                        <Button color="warning" containerStyle={{ borderRadius: 10 }}
-                            onPress={() => {
-                                speak();
-                            }}>
-                            <Icon name="volume-2" size={23} color="#000" />
-                        </Button>
-                    </View>
-                    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: COLORS.background }}>
-                        <ActivityIndicator size="large" color="#F49D1A" />
-                    </View>
-                </View>
-
-                <TouchableOpacity style={{ position: 'absolute', top: 30, right: 30, width: 120, height: 65 }}>
+                <View style={{ flex: 1, alignItems: 'center' }}>
+                <TouchableOpacity style={{ width: 96, marginTop: 15 }}>
                     <Button color="#139190" containerStyle={{ borderRadius: 10 }}
+                        disabled={loading}
                         onPress={() => {
                             getInfo();
                         }}>
                         Từ khác
+                        <Ionicons name="reload" size={18} color="#fff" style={{marginLeft: 7}} />
                     </Button>
                 </TouchableOpacity>
+                    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: COLORS.background }}>
+                        <ActivityIndicator size="large" color="#F49D1A" />
+                    </View>
+                </View>
             </View>
         );
 }
@@ -291,10 +278,6 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: COLORS.background,
         paddingTop: 0
-    },
-    speaker: {
-        width: 50,
-        height: 40,
     },
     info: {
         color: "#000",

@@ -13,8 +13,8 @@ import COLORS from '../colors/Color';
 
 
 function Login({ navigation }) {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [email, setEmail] = useState("admin");
+    const [password, setPassword] = useState("123");
     const [loading, setLoading] = useState(false);
 
     return (

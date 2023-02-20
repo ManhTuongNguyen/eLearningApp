@@ -90,7 +90,7 @@ const Quiz = ({ route, navigation }) => {
         console.log(question_index + 1);
         Animated.timing(progress, {
             toValue: question_index + 1,
-            duration: 2400,
+            duration: 3500,
             useNativeDriver: false
         }).start();
     }, []);

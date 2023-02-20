@@ -129,7 +129,7 @@ export default function Dictionary() {
                 }
                 setCheckedWord(wordInput);
                 setPronounce(_pronounce);
-                
+
                 let listNoun = [];
                 let listVerb = [];
                 let listAdjective = [];
@@ -240,16 +240,15 @@ export default function Dictionary() {
                 <View style={{
                     flexDirection: "row",
                     justifyContent: "flex-end",
-                    marginTop: 10,
-                    marginRight: 30
+                    marginTop: 15,
+                    marginRight: 10
                 }}>
-
-                    <Button color="warning" containerStyle={{ borderRadius: 10 }}
+                    <TouchableOpacity
                         onPress={() => {
                             speak();
                         }}>
-                        <Icon name="volume-2" size={23} color="#000" />
-                    </Button>
+                        <Icon name="volume-2" size={35} color="#454444" />
+                    </TouchableOpacity>
                 </View>
                 <Card.Title style={{ fontSize: 24 }}>{checkedWord}</Card.Title>
                 <Card.Divider />
@@ -284,16 +283,15 @@ export default function Dictionary() {
                     <View style={{
                         flexDirection: "row",
                         justifyContent: "flex-end",
-                        marginTop: 10,
-                        marginRight: 30
+                        marginTop: 15,
+                        marginRight: 10
                     }}>
-
-                        <Button color="warning" containerStyle={{ borderRadius: 10 }}
+                        <TouchableOpacity
                             onPress={() => {
                                 speak();
                             }}>
-                            <Icon name="volume-2" size={23} color="#000" />
-                        </Button>
+                            <Icon name="volume-2" size={35} color="#454444" />
+                        </TouchableOpacity>
                     </View>
                     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: COLORS.background }}>
                         <ActivityIndicator size="large" color="#F49D1A" />
