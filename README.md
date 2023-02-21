@@ -37,7 +37,7 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    npx react-native run-android
    ```
-**Or [Download file apk and install it](https://github.com/ManhTuongNguyen/eLearningApp/releases/tag/v1.0.0)**
+**Or [Download file apk and install it](https://github.com/ManhTuongNguyen/eLearningApp/releases/tag/1.0.0)**
 
 Information about this apk:
 * minSdkVersion = 21
